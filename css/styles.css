@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(163, 163, 163);
+}
+
+header {
+    background: rgb(32, 32, 32);
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 7.5px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 45px;
+}
+h3{
+    font-size: 35px;
+}
+h4{
+    font-size: 25px;
+}
+
+article {
+    float: left;
+    width: 75%;
+    padding: 20px;
+}
+
+aside{
+    float: right;
+    padding: 50px;
+}
+
+table {
+    float: right; 
+    width: 22em;
+    background-color: lightgray;
+    border: solid 1px;
+}
+
+th{
+    padding-left: 20px;
+    padding-right: 75px;
+}
+
+td{
+    padding: 10px;
+}
+
+h3 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(34, 44, 80, 0.527);
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px black dotted;
+}
+
+h3 a:hover {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    background-color: rgba(14, 17, 31, 0.527);
+    border: 5px black dotted;
+}

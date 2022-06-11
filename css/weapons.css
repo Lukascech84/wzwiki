@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Josefin+Sans:wght@500');
+
+html,
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+.bg-img {
+    background-image: url("../weaponpage/weapons/img/banner.bmp");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 110%;
+    width: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: -99999999;
+}
+
+
+aside {
+    min-width: 15%;
+    max-width: 15%;
+    height: 1700px;
+    position: absolute;
+}
+
+.list-group {
+    min-width: 80%;
+    max-width: 80%;
+    border-radius: 0% !important;
+    text-align: center;
+    margin: auto;
+
+}
+
+.list-group-item {
+    background-color: rgb(78, 78, 78) !important;
+    border-color: rgb(148, 148, 148) !important;
+    border-width: 1px !important;
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
+    border-radius: 25px !important;
+    height: 5vw;
+    position: relative;
+}
+
+.list-group a {
+    padding: 1vw;
+    font-size: 2.2vw;
+    color: white;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.list-group a:hover {
+    padding: 1vw;
+    font-size: 2.2vw;
+    color: white;
+    background-color: #7c7c7c !important;
+}
+
+
+.active {
+    margin-top: 7.5% !important;
+    margin-bottom: 7.5% !important;
+    background-color: #7c7c7c !important;
+    border-width: 2px !important;
+    border-color: black !important;
+}
+
+.row {
+    top: 2vw;
+    left: 15.4vw !important;
+    position: absolute;
+    margin-right: 0px !important;
+}
+
+.first {
+    margin-top: 50px !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    width: 39vw !important;
+    height: 45vw !important;
+    margin-left: 5vw;
+    color: white;
+}
+
+.first h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2.5vw;
+}
+
+.first h3 {
+    color: gray;
+    padding-top: 1.5vw;
+    padding-left: 2vw;
+    font-size: 1.5vw;
+}
+
+.first h2 {
+    padding-left: 3vw;
+    font-size: 2vw;
+}
+
+.second {
+    margin-top: 50px !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    width: 39vw !important;
+    height: 45vw !important;
+    margin-left: 5vw;
+    color: white;
+}
+
+.second h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.second img {
+    width: 35vw;
+    padding-top: 175px;
+}
+
+.third {
+    margin-top: 50px !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    width: 39vw !important;
+    height: 25vw !important;
+    margin-left: 5vw;
+    color: white;
+}
+
+.third h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.fourth {
+    margin-top: 50px !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    width: 39vw !important;
+    height: 32vw !important;
+    margin-left: 5vw;
+    color: white;
+}
+
+.fourth h1 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.fourth p {
+    padding-left: 1vw;
+    font-size: 1vw;
+}
+
+@media only screen and (max-width: 450px) {
+    .first {
+        width: 78vw !important;
+        height: 205px !important
+    }
+
+    .second {
+        width: 78vw !important;
+        height: 45vw !important
+    }
+
+    .second img {
+        width: 80vw;
+        padding-top: 5vw;
+    }
+
+    .first h1 {
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .first h3 {
+        color: gray;
+        padding-top: 1vw;
+        padding-left: 2vw;
+        font-size: 1.2vw;
+    }
+
+    .first h2 {
+        padding-left: 3vw;
+        font-size: 1.5vw;
+    }
+
+    .third {
+        width: 78vw !important
+    }
+
+    .third h1 {
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .fourth {
+        width: 78vw !important;
+    }
+
+    .fourth p {
+        padding-left: 1vw;
+        font-size: 1vw;
+    }
+
+    .fourth h1 {
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.5vw;
+    }
+}
+
+
+@media only screen and (max-width: 849px) {
+    .first {
+        width: 78vw !important
+    }
+
+    .first h1 {
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .first h2 {
+        padding-left: 3vw;
+        font-size: 1.5vw;
+    }
+
+    .first h3 {
+        color: gray;
+        padding-top: 1vw;
+        padding-left: 2vw;
+        font-size: 1.2vw;
+    }
+
+    .second {
+        width: 78vw !important
+    }
+
+    .second h1 {
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .second img {
+        width: 80vw;
+        padding-top: 0vw;
+    }
+
+    .third {
+        width: 78vw !important;
+        height: 45vw !important;
+    }
+
+    .third h1 {
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .fourth {
+        width: 78vw !important;
+        height: 25vw !important;
+    }
+
+    .fourth h1 {
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .fourth p {
+        padding-left: 1vw;
+        font-size: 1vw;
+    }
+
+}
+
+
+@media only screen and (min-width: 850px) {
+    .first {
+        width: 35vw !important
+    }
+
+    .first h1 {
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .first h3 {
+        color: gray;
+        padding-top: 1.5vw;
+        padding-left: 2vw;
+        font-size: 1.5vw;
+    }
+
+    .first h2 {
+        padding-left: 3vw;
+        font-size: 2vw;
+    }
+
+    .second {
+        width: 35vw !important
+    }
+
+    .second h1 {
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .second img {
+        width: 35vw;
+        padding-top: 10vw;
+    }
+
+    .third {
+        width: 35vw !important;
+    }
+
+    .third h1 {
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.5vw;
+    }
+
+    .fourth {
+        width: 35vw !important
+    }
+
+    .fourth h1 {
+        text-align: center;
+        padding-top: 1vw;
+        font-size: 2.5vw;
+    }
+
+}
