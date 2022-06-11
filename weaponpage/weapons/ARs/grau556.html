@@ -57,15 +57,15 @@
             <div class="first col-xl-5 col-lg-5 col-md-5 col-sm-10">
                 <h1>Doporučený loadout</h1>
                 <h3>Muzzle</h3>
-                <h2>AGENCY SUPPRESSOR</h2>
+                <h2>MONOLITHIC SUPPRESSOR</h2>
                 <h3>Barrel</h3>
-                <h2>13.5" TASK FORCE</h2>
-                <h3>Optic</h3>
-                <h2>AXIAL ARMS 3X</h2>
+                <h2>TEMPUS 26.4" ARCHANGEL</h2>
+                <h3>Laser</h3>
+                <h2>TAC LASER</h2>
                 <h3>Underbarrel</h3>
-                <h2>FIELD AGENT GRIP</h2>
+                <h2>COMMANDO FOREGRIP</h2>
                 <h3>Ammunition</h3>
-                <h2>STANAG 60 RND</h2>
+                <h2>60 ROUND MAGS</h2>
             </div>
             <div class="second col-xl-5 col-lg-5 col-md-5 col-sm-10">
                 <h1>Foto</h1>
@@ -79,17 +79,7 @@
             </div>
             <div class="fourth col-xl-5 col-lg-5 col-md-5 col-sm-10">
                 <h1>Reálné informace</h1>
-                <p>Karabina M4 podle které je XM4 inspirována, je hojně využívána ozbrojenými silami Spojených států,
-                    přičemž bylo rozhodnuto, že v bojových jednotkách Armády Spojených států (od roku 2010) a Námořní
-                    pěchoty Spojených států (USMC) (od roku 2016) z velké části nahradí pušku M16 jako primární pěchotní
-                    zbraň a služební pušku. Pušku M4 přijalo více než 60 zemí světa a byla označena za "jednu z
-                    určujících palných zbraní 21. století".
-                </p>
-                <p>Od svého přijetí v roce 1994 prošla M4 více než 90 modifikacemi, které zlepšily ergonomii a
-                    modularitu zbraně, včetně: M4A1, která posílila hlaveň a odstranila možnost střelby dávkou, SOPMOD,
-                    sady příslušenství obsahující optické nástavce, a podhlavňového granátometu M203.</p>
-                <p>V dubnu 2022 americká armáda vybrala SIG MCX SPEAR jako vítěze programu Next Generation Squad Weapon,
-                    který nahradí M16/M4. Zbraň je označena jako XM5. </p>
+                <p>O TÉTO ZBRANI JSEM NENALEZL ŽÁDNÉ REÁLNÉ INFORMACE.</p>
             </div>
         </div>
 
@@ -99,6 +89,7 @@
 
     <script>
         window.onload = function () {
+            Chart.defaults.global.defaultFontColor = "#fff";
             var StatsContext = document.getElementById("graf").getContext("2d");
             var StatsData = {
                 labels: [
@@ -111,7 +102,7 @@
                 ],
                 datasets: [{
                     label: "Statistiky",
-                    data: [71, 63, 70, 63, 77, 79],
+                    data: [70, 65, 71.5, 66, 72, 70],
                     backgroundColor: ["#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c"],
                     hoverBackgroundColor: ["#b1b1b1", "#b1b1b1", "#b1b1b1", "#b1b1b1", "#b1b1b1",
                         "#b1b1b1"

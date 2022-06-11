@@ -23,7 +23,7 @@ body {
 aside {
     min-width: 15%;
     max-width: 15%;
-    height: 1700px;
+    height: 2500px;
     position: absolute;
 }
 
@@ -82,7 +82,7 @@ aside {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     width: 39vw !important;
-    height: 45vw !important;
+    height: 85vw !important;
     margin-left: 5vw;
     color: white;
 }
@@ -110,7 +110,7 @@ aside {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     width: 39vw !important;
-    height: 45vw !important;
+    height: 85vw !important;
     margin-left: 5vw;
     color: white;
 }
@@ -158,7 +158,6 @@ aside {
 .fourth p {
     padding-left: 1vw;
     font-size: 1vw;
-    margin-bottom: 2vw;
 }
 
 @media only screen and (max-width: 450px) {
@@ -180,19 +179,19 @@ aside {
     .first h1 {
         text-align: center;
         padding-top: 1vw;
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
 
     .first h3 {
         color: gray;
         padding-top: 1vw;
         padding-left: 2vw;
-        font-size: 1.2vw;
+        font-size: 0.7vw;
     }
 
     .first h2 {
         padding-left: 3vw;
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
 
     .third {
@@ -224,7 +223,8 @@ aside {
 
 @media only screen and (max-width: 849px) {
     .first {
-        width: 78vw !important
+        width: 78vw !important;
+        height: 85vw !important;
     }
 
     .first h1 {
@@ -246,7 +246,8 @@ aside {
     }
 
     .second {
-        width: 78vw !important
+        width: 78vw !important;
+        height: 45vw !important;
     }
 
     .second h1 {

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="../../../css/weapons.css">
+    <link rel="stylesheet" href="../../../css/weaponsvanguard.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
@@ -57,15 +57,25 @@
             <div class="first col-xl-5 col-lg-5 col-md-5 col-sm-10">
                 <h1>Doporučený loadout</h1>
                 <h3>Muzzle</h3>
-                <h2>AGENCY SUPPRESSOR</h2>
+                <h2>MX SILENCER</h2>
                 <h3>Barrel</h3>
-                <h2>13.5" TASK FORCE</h2>
+                <h2>LOR MK1 BURST</h2>
                 <h3>Optic</h3>
-                <h2>AXIAL ARMS 3X</h2>
+                <h2>SVT-40 PU SCOPE 3-6X</h2>
+                <h3>Stock</h3>
+                <h2>ORBWEAVER E PACKD</h2>
                 <h3>Underbarrel</h3>
-                <h2>FIELD AGENT GRIP</h2>
-                <h3>Ammunition</h3>
-                <h2>STANAG 60 RND</h2>
+                <h2>M1941 HAND STOP</h2>
+                <h3>Magazine</h3>
+                <h2>6.5MM SAKURA 50 ROUND MAGS</h2>
+                <h3>Ammo Type</h3>
+                <h2>LENGTHENED</h2>
+                <h3>Rear Grip</h3>
+                <h2>POLYMER GRIP</h2>
+                <h3>Perk 1</h3>
+                <h2>BRACE</h2>
+                <h3>Perk 2</h3>
+                <h2>FULLY LOADED</h2>
             </div>
             <div class="second col-xl-5 col-lg-5 col-md-5 col-sm-10">
                 <h1>Foto</h1>
@@ -79,17 +89,15 @@
             </div>
             <div class="fourth col-xl-5 col-lg-5 col-md-5 col-sm-10">
                 <h1>Reálné informace</h1>
-                <p>Karabina M4 podle které je XM4 inspirována, je hojně využívána ozbrojenými silami Spojených států,
-                    přičemž bylo rozhodnuto, že v bojových jednotkách Armády Spojených států (od roku 2010) a Námořní
-                    pěchoty Spojených států (USMC) (od roku 2016) z velké části nahradí pušku M16 jako primární pěchotní
-                    zbraň a služební pušku. Pušku M4 přijalo více než 60 zemí světa a byla označena za "jednu z
-                    určujících palných zbraní 21. století".
+                <p>NZ-41 reálně pojmenována Charltonova automatická puška byla plně automatická konverze pušky
+                    Lee-Enfield, kterou v roce 1941 navrhl Novozélanďan Philip Charlton jako náhradu za lehké kulomety
+                    Bren a Lewis gun, kterých byl v té době velký nedostatek.
                 </p>
-                <p>Od svého přijetí v roce 1994 prošla M4 více než 90 modifikacemi, které zlepšily ergonomii a
-                    modularitu zbraně, včetně: M4A1, která posílila hlaveň a odstranila možnost střelby dávkou, SOPMOD,
-                    sady příslušenství obsahující optické nástavce, a podhlavňového granátometu M203.</p>
-                <p>V dubnu 2022 americká armáda vybrala SIG MCX SPEAR jako vítěze programu Next Generation Squad Weapon,
-                    který nahradí M16/M4. Zbraň je označena jako XM5. </p>
+                <p>Původní automatické pušky Charlton byly přestavěny ze zastaralých pušek Lee-Metford a zásobníkových
+                    pušek Lee-Enfield, které pocházely již z búrské války, a byly určeny k použití jako poloautomatické
+                    pušky s možností použití plného automatu pro nouzové použití. Používaly se zásobníky Lee-Enfield na
+                    10 nábojů a upravené zásobníky Bren na 30 nábojů. Zbraň nebyla nikdy určena k použití jako frontová
+                    bojová zbraň, místo toho byla navržena a přijata především pro novozélandskou domobranu.</p>
             </div>
         </div>
 
@@ -99,6 +107,7 @@
 
     <script>
         window.onload = function () {
+            Chart.defaults.global.defaultFontColor = "#fff";
             var StatsContext = document.getElementById("graf").getContext("2d");
             var StatsData = {
                 labels: [
@@ -111,7 +120,7 @@
                 ],
                 datasets: [{
                     label: "Statistiky",
-                    data: [71, 63, 70, 63, 77, 79],
+                    data: [68, 59, 61, 67, 76, 68],
                     backgroundColor: ["#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c"],
                     hoverBackgroundColor: ["#b1b1b1", "#b1b1b1", "#b1b1b1", "#b1b1b1", "#b1b1b1",
                         "#b1b1b1"
