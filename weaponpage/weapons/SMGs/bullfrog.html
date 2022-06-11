@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <title>BULLFROG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../../../css/weaponsvanguard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+</head>
+
+
+
+<body>
+    <div class="bg-img"></div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../index.html">WZWiki</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.callofduty.com/warzone">Oficiální stránky</a>
+                    </li>
+                    <a class="nav-link" href="../../weaponpage.html">Zbraně</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../quiz/index.html">Kvíz</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="bg-dark">
+        <div class="list-group">
+            <a href="./mp40.html" class="list-group-item">MP-40</a>
+            <a href="./welgun.html" class="list-group-item">Welgun</a>
+            <a href="./h4blixen.html" class="list-group-item">H4 Blixen</a>
+            <a href="./lapa.html" class="list-group-item">Lapa</a>
+            <a href="#" class="list-group-item active">Bullfrog</a>
+            <a href="./mp5.html" class="list-group-item">MP5(CW)</a>
+        </div>
+    </aside>
+
+
+    <main>
+
+        <div class="row ">
+            <div class="first col-xl-5 col-lg-5 col-md-5 col-sm-10">
+                <h1>Doporučený loadout</h1>
+                <h3>Muzzle</h3>
+                <h2>MX SILENCER</h2>
+                <h3>Barrel</h3>
+                <h2>LOR MK1 BURST</h2>
+                <h3>Optic</h3>
+                <h2>SVT-40 PU SCOPE 3-6X</h2>
+                <h3>Stock</h3>
+                <h2>ORBWEAVER E PACKD</h2>
+                <h3>Underbarrel</h3>
+                <h2>M1941 HAND STOP</h2>
+                <h3>Magazine</h3>
+                <h2>6.5MM SAKURA 50 ROUND MAGS</h2>
+                <h3>Ammo Type</h3>
+                <h2>LENGTHENED</h2>
+                <h3>Rear Grip</h3>
+                <h2>POLYMER GRIP</h2>
+                <h3>Perk 1</h3>
+                <h2>BRACE</h2>
+                <h3>Perk 2</h3>
+                <h2>FULLY LOADED</h2>
+            </div>
+            <div class="second col-xl-5 col-lg-5 col-md-5 col-sm-10">
+                <h1>Foto</h1>
+                <img src="../img/nz41.bmp" alt="XM4 Fotka">
+            </div>
+            <div class="third col-xl-5 col-lg-5 col-md-5 col-sm-10">
+                <h1>Statistiky</h1>
+                <div class="container">
+                    <canvas id="graf"></canvas>
+                </div>
+            </div>
+            <div class="fourth col-xl-5 col-lg-5 col-md-5 col-sm-10">
+                <h1>Reálné informace</h1>
+                <p>NZ-41 reálně pojmenována Charltonova automatická puška byla plně automatická konverze pušky
+                    Lee-Enfield, kterou v roce 1941 navrhl Novozélanďan Philip Charlton jako náhradu za lehké kulomety
+                    Bren a Lewis gun, kterých byl v té době velký nedostatek.
+                </p>
+                <p>Původní automatické pušky Charlton byly přestavěny ze zastaralých pušek Lee-Metford a zásobníkových
+                    pušek Lee-Enfield, které pocházely již z búrské války, a byly určeny k použití jako poloautomatické
+                    pušky s možností použití plného automatu pro nouzové použití. Používaly se zásobníky Lee-Enfield na
+                    10 nábojů a upravené zásobníky Bren na 30 nábojů. Zbraň nebyla nikdy určena k použití jako frontová
+                    bojová zbraň, místo toho byla navržena a přijata především pro novozélandskou domobranu.</p>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script>
+        window.onload = function () {
+            Chart.defaults.global.defaultFontColor = "#fff";
+            var StatsContext = document.getElementById("graf").getContext("2d");
+            var StatsData = {
+                labels: [
+                    "Accuracy",
+                    "Mobility",
+                    "Fire Rate",
+                    "Range",
+                    "Damage",
+                    "Control"
+                ],
+                datasets: [{
+                    label: "Statistiky",
+                    data: [68, 59, 61, 67, 76, 68],
+                    backgroundColor: ["#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c"],
+                    hoverBackgroundColor: ["#b1b1b1", "#b1b1b1", "#b1b1b1", "#b1b1b1", "#b1b1b1",
+                        "#b1b1b1"
+                    ]
+                }]
+            };
+            var MeSeChart = new Chart(StatsContext, {
+                type: 'horizontalBar',
+                data: StatsData,
+                options: {
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                beginAtZero: true,
+                                max: 100
+                            }
+                        }],
+                        yAxes: [{
+                            stacked: true
+                        }]
+                    }
+                }
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
