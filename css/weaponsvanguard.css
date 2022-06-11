@@ -7,7 +7,7 @@ body {
 }
 
 .bg-img {
-    background-image: url("../weaponpage/weapons/img/banner.bmp");
+    background-image: url("../weaponpage/weapons/img/banner.jpg");
     filter: blur(8px);
     -webkit-filter: blur(8px);
     height: 110%;
