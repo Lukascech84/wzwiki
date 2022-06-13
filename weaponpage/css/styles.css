@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 33, 43);
+    color: white;
+}
+.service-icon {
+    position: relative;
+    margin: -50px 0 25px 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(247, 247, 247);
+    background: #3b3b3b;
+    border-radius: 100px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.384);
+    transition: .5s;
+}
+
+.service-item:hover .service-icon {
+    color: #2b2b2b;
+    background: rgb(168, 168, 168);
+}
+
+a {
+    text-decoration: none;
+    
+}

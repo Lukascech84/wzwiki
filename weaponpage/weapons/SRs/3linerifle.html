@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <title>3-Line Rifle</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../../../css/weaponsvanguard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+</head>
+
+
+
+<body>
+    <div class="bg-img"></div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../../index.html">WZWiki</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.callofduty.com/warzone">Oficiální stránky</a>
+                    </li>
+                    <a class="nav-link" href="../../weaponpage.html">Zbraně</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../../quiz/index.html">Kvíz</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="bg-dark">
+        <div class="list-group">
+            <a href="./ax50.html" class="list-group-item">AX-50</a>
+            <a href="./hdr.html" class="list-group-item">HDR</a>
+            <a href="./swiss.html" class="list-group-item">Swiss K31</a>
+            <a href="./zrg.html" class="list-group-item">ZRG</a>
+            <a href="#" class="list-group-item active">3-Line</a>
+        </div>
+    </aside>
+
+    <main>
+
+        <div class="row ">
+            <div class="first col-xl-5 col-lg-5 col-md-5 col-sm-10">
+                <h1>Doporučený loadout</h1>
+                <h3>Muzzle</h3>
+                <h2>MERCURY SILENCER</h2>
+                <h3>Barrel</h3>
+                <h2>EMPRESS 514MM F01</h2>
+                <h3>Stock</h3>
+                <h2>ZAC CUSTOM MZ</h2>
+                <h3>Underbarrel</h3>
+                <h2>HEAVY FOREGRIP</h2>
+                <h3>Magazine</h3>
+                <h2>.30-06 20 ROUND MAGS</h2>
+                <h3>Ammo Type</h3>
+                <h2>LENGTHENED</h2>
+                <h3>Rear Grip</h3>
+                <h2>LEATHER GRIP</h2>
+                <h3>Perk 1</h3>
+                <h2>AWARENESS</h2>
+                <h3>Perk 2</h3>
+                <h2>FULLY LOADED</h2>
+            </div>
+            <div class="second col-xl-5 col-lg-5 col-md-5 col-sm-10">
+                <h1>Foto</h1>
+                <img src="../img/3linerifle.bmp" alt="3-Line Rifle Fotka">
+            </div>
+            <div class="third col-xl-5 col-lg-5 col-md-5 col-sm-10">
+                <h1>Statistiky</h1>
+                <div class="container">
+                    <canvas id="graf"></canvas>
+                </div>
+            </div>
+            <div class="fourth col-xl-5 col-lg-5 col-md-5 col-sm-10">
+                <h1>Reálné informace</h1>
+                <p>Třířadá puška M1891, známá na Západě jako Mosin-Nagant a v Rusku a bývalém Sovětském svazu jako
+                    Mosinova puška, je pětiranná vojenská puška se šroubovým závěrem a vnitřním zásobníkem. Vyskytuje se
+                    především s komorou na původní náboj 7,62 × 54 mmR. </p>
+                <p>Byl vyvinut v letech 1882 až 1891 a používaly ho ozbrojené síly Ruské říše, Sovětského svazu a
+                    různých dalších zemí. Jedná se o jednu z nejmasověji vyráběných vojenských pušek se šroubem v
+                    historii - od roku 1891 bylo vyrobeno více než 37 milionů kusů. Navzdory svému stáří se dodnes
+                    používá v různých konfliktech po celém světě. </p>
+                <p>Během rusko-osmanské války v letech 1877-1878 utrpěly ruské jednotky vyzbrojené převážně jednorannými
+                    puškami Berdan těžké ztráty proti tureckým jednotkám vybaveným opakovacími puškami Winchester,
+                    zejména při krvavém obléhání Plevna. To ukázalo ruským velitelům potřebu modernizovat všeobecnou
+                    pěchotní výzbroj armády. </p>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <script>
+        window.onload = function () {
+            Chart.defaults.global.defaultFontColor = "#fff";
+            var StatsContext = document.getElementById("graf").getContext("2d");
+            var StatsData = {
+                labels: [
+                    "Accuracy",
+                    "Mobility",
+                    "Fire Rate",
+                    "Range",
+                    "Damage",
+                    "Control"
+                ],
+                datasets: [{
+                    label: "Statistiky",
+                    data: [83, 43, 43, 83, 79, 65],
+                    backgroundColor: ["#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c", "#7c7c7c"],
+                    hoverBackgroundColor: ["#b1b1b1", "#b1b1b1", "#b1b1b1", "#b1b1b1", "#b1b1b1",
+                        "#b1b1b1"
+                    ]
+                }]
+            };
+            var MeSeChart = new Chart(StatsContext, {
+                type: 'horizontalBar',
+                data: StatsData,
+                options: {
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                beginAtZero: true,
+                                max: 100
+                            }
+                        }],
+                        yAxes: [{
+                            stacked: true
+                        }]
+                    }
+                }
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
