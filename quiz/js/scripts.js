@@ -21,7 +21,7 @@ function setup() {
         document.getElementById("question").innerHTML = questions[0][0];
         document.getElementById("questionNo").innerHTML = "Otázka: " + questionNo;
     } else {
-        document.getElementById("questionNo").innerHTML = 'Hotovo! <br> Klikni zde pro <a class="odpovedi" href="./odpovedi.html">Odpovědi</a>';
+        document.getElementById("questionNo").innerHTML = "Hotovo!";
         document.getElementById("question").innerHTML = "Tvoje skóre je: " + score;
         document.getElementById("text-field").remove();
         document.getElementById("button").remove();
